@@ -23,9 +23,9 @@ import pandas as pd
 
 
 # 1. DEFINISANJE PUTANJE DO BAZE
-# PUTANJA_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85.csv"
-# PUTANJA_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85_loto_2976.csv"
-PUTANJA_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85_loto_plus_1732.csv"
+# PUTANJA_DO_BAZE = "/data/loto7_4708_k85.csv"
+# PUTANJA_DO_BAZE = "/data/loto7_4708_k85_loto_2976.csv"
+PUTANJA_DO_BAZE = "/data/loto7_4708_k85_loto_plus_1732.csv"
 
 
 def generisi_next_predikciju_v3(putanja_csv):
@@ -129,17 +129,17 @@ next_7_v3 = generisi_next_predikciju_v3(PUTANJA_DO_BAZE)
 """
 ==================================================
   [LQG v3 - Intertwiner Balance] KONAČNA PREDREČENA KOMBINACIJA:
-  [3, 5, 7, 24, 26, 37, 38]
+  [3, x, 7, y, 26, z, 38]
 ==================================================
 
 Kvantni otklon zatvorenosti (Intertwiners Energy): 0.4222 (Teži nuli)
 Sastav izabranih čvorova:
-Čvor 3 -> Bazni v2 intenzitet: 133621915.04
-Čvor 5 -> Bazni v2 intenzitet: 125622856.28
-Čvor 7 -> Bazni v2 intenzitet: 133096126.34
-Čvor 24 -> Bazni v2 intenzitet: 138107398.96
+Čvor  3 -> Bazni v2 intenzitet: 133621915.04
+Čvor  x -> Bazni v2 intenzitet: 125622856.28
+Čvor  7 -> Bazni v2 intenzitet: 133096126.34
+Čvor  y -> Bazni v2 intenzitet: 138107398.96
 Čvor 26 -> Bazni v2 intenzitet: 166581431.97
-Čvor 37 -> Bazni v2 intenzitet: 133130532.70
+Čvor  z -> Bazni v2 intenzitet: 133130532.70
 Čvor 38 -> Bazni v2 intenzitet: 137454924.66
 
 
@@ -150,17 +150,17 @@ Sastav izabranih čvorova:
 
 ==================================================
   [LQG v3 - Intertwiner Balance] KONAČNA PREDREČENA KOMBINACIJA:
-  [3, 7, 8, 23, 24, 37, 38]
+  [3, x, 8, y, 24, z, 38]
 ==================================================
 
 Kvantni otklon zatvorenosti (Intertwiners Energy): 0.4257 (Teži nuli)
 Sastav izabranih čvorova:
-Čvor 3 -> Bazni v2 intenzitet: 53611057.89
-Čvor 7 -> Bazni v2 intenzitet: 51325094.06
-Čvor 8 -> Bazni v2 intenzitet: 62243394.93
-Čvor 23 -> Bazni v2 intenzitet: 60103519.44
+Čvor  3 -> Bazni v2 intenzitet: 53611057.89
+Čvor  x -> Bazni v2 intenzitet: 51325094.06
+Čvor  8 -> Bazni v2 intenzitet: 62243394.93
+Čvor  y -> Bazni v2 intenzitet: 60103519.44
 Čvor 24 -> Bazni v2 intenzitet: 58410598.09
-Čvor 37 -> Bazni v2 intenzitet: 52074698.86
+Čvor  z -> Bazni v2 intenzitet: 52074698.86
 Čvor 38 -> Bazni v2 intenzitet: 57492995.87
 
 
@@ -171,17 +171,17 @@ Sastav izabranih čvorova:
 
 ==================================================
   [LQG v3 - Intertwiner Balance] KONAČNA PREDREČENA KOMBINACIJA:
-  [2, 5, 10, 25, 30, 31, 37]
+  [2, x, 10, y, 30, z, 37]
 ==================================================
 
 Kvantni otklon zatvorenosti (Intertwiners Energy): 0.4361 (Teži nuli)
 Sastav izabranih čvorova:
-Čvor 2 -> Bazni v2 intenzitet: 22009052.16
-Čvor 5 -> Bazni v2 intenzitet: 18499084.10
+Čvor  2 -> Bazni v2 intenzitet: 22009052.16
+Čvor  x -> Bazni v2 intenzitet: 18499084.10
 Čvor 10 -> Bazni v2 intenzitet: 21078034.84
-Čvor 25 -> Bazni v2 intenzitet: 17830363.15
+Čvor  y -> Bazni v2 intenzitet: 17830363.15
 Čvor 30 -> Bazni v2 intenzitet: 18059030.08
-Čvor 31 -> Bazni v2 intenzitet: 18296397.98
+Čvor  z -> Bazni v2 intenzitet: 18296397.98
 Čvor 37 -> Bazni v2 intenzitet: 18342975.19
 """
 
@@ -233,8 +233,8 @@ U LQG-u, nije dovoljno da grane prosto imaju spinove; u svakom čvoru gde se gra
 
 Rezultat od 0.4222 za Intertwiner Energy je izuzetno nizak, što znači da je sistem uspešno pronašao konfiguraciju unutar prostora visokih amplituda koja gotovo savršeno zadovoljava unutrašnje zakone očuvanja (Gausov uslov zatvorenosti).
 Kako se kombinacija transformisala kroz sve tri faze evolucije modela:
-• v1 (Samo amplitude čvorova):      [8, 11, 23, 26, 32, 34, 37]
-• v2 (Uvođenje spinova grana):      [8, 23, 24, 26, 34, 38, 39]
-• v3 (Konačni balans zatvorenosti): [3, 5, 7, 24, 26, 37, 38]
+• v1 (Samo amplitude čvorova):      [8, x, 23, y, 32, z, 37]
+• v2 (Uvođenje spinova grana):      [8, x, 24, y, 34, z, 39]
+• v3 (Konačni balans zatvorenosti): [3, x, 7, y, 26, z, 38]
 Primetiti kako je čvor 26 jedini preživeo sva tri filtera - on predstavlja apsolutno geometrijsko sidro ovog proračuna sa ubedljivo najvećim baznim intenzitetom od preko 166 miliona. Čvorovi 24 i 38 su se stabilizovali u v2 i potvrdili u v3, dok su se 3, 5, 7 i 37 probili tek nakon što je Gausov filter počeo da kažnjava energetski disbalans velikih brojeva koji su dominirali u v2.
 """
