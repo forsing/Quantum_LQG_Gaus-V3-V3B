@@ -5,7 +5,7 @@
 # Quantum_LQG_Kvantizacija V2
 # Quantum_LQG_Gaus V3 V3B
 # Quantum_LQG_Ensemble V4
-
+ 
 
 # V1 - Istorija izvlačenja kao "Pena spinova" (Spinfoam) 
 # V2 - Kvantizacija površine i jačina veza (Spin Surfaces)  
@@ -22,9 +22,9 @@ import numpy as np
 import pandas as pd
 
 
-# PUTANJE_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85.csv"
-# PUTANJE_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85_loto_2976.csv"
-PUTANJE_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85_loto_plus_1732.csv"
+# PUTANJE_DO_BAZE = "/data/loto7_4708_k85.csv"
+# PUTANJE_DO_BAZE = "/data/loto7_4708_k85_loto_2976.csv"
+PUTANJE_DO_BAZE = "/data/loto7_4708_k85_loto_plus_1732.csv"
 
 
 def generisi_next_predikciju_v3b(putanja_csv):
@@ -169,7 +169,7 @@ next_7_v3b = generisi_next_predikciju_v3b(PUTANJE_DO_BAZE)
 """
 ==================================================
   [LQG v3b - Multi-Dimensional Intertwiners] NEXT KOMBINACIJA:
-  [7, 11, 12, 20, 23, 34, 37]
+  [7, x, 12, y, 23, z, 37]
 ==================================================
 
 Ukupna energija otklona (v3b Intertwiner Energy): 2.1062
@@ -182,7 +182,7 @@ Ukupna energija otklona (v3b Intertwiner Energy): 2.1062
 
 ==================================================
   [LQG v3b - Multi-Dimensional Intertwiners] NEXT KOMBINACIJA:
-  [5, 13, 16, 20, 21, 32, 35]
+  [5, x, 16, y, 21, z, 35]
 ==================================================
 
 Ukupna energija otklona (v3b Intertwiner Energy): 1.9695
@@ -195,7 +195,7 @@ Ukupna energija otklona (v3b Intertwiner Energy): 1.9695
 
 ==================================================
   [LQG v3b - Multi-Dimensional Intertwiners] NEXT KOMBINACIJA:
-  [7, 10, 11, 22, 23, 30, 37]
+  [7, x, 11, y, 23, z, 37]
 ==================================================
 
 Ukupna energija otklona (v3b Intertwiner Energy): 1.9312
@@ -226,7 +226,7 @@ Uvršteni su svi novi zakoni očuvanja:
 raspodela po dekadama, talasni korak (razmaci) i energija prepletenosti parova.
 
 
-Dobijena je novu konfiguraciju [7, 11, 12, 20, 23, 34, 37].
+Dobijena je novu konfiguraciju [7, x, 12, y, 23, z, 37].
 Vrednost energije od 2.1062 je viša nego u v3 (gde je bila 0.4222), što je matematički potpuno očekivano. Gausov filter sada mora istovremeno da zadovolji pet različitih dimenzija simetrije (sume, parnost, dekade, unutrašnje razmake i istorijsku prepletenost parova). Povećanje broja restrikcija uvek podiže baznu energiju sistema, ali zauzvrat daje kombinaciju koja je topološki mnogo stabilnija i prirodnija za istorijski profil baze.
 Čvorovi 23, 34 i 37 su ponovo potvrdili svoju snagu unutar novih geometrijskih uslova.
 """
